@@ -24,6 +24,7 @@ nav
 	margin-top:10px;
 	border-radius: 20px;
 }
+
 button
 {
 	width: 120px;
@@ -68,12 +69,26 @@ section
 }	
 
 article 
-{
-	height:200px;
-	width:100%;
-	border-radius: 10px;
-}		
+{	
+	display: grid;
+	column-gap: 2%;
+	grid-template-columns: 32% 32% 32%;
+	background-color: #2196F3;
+	padding: 10px;
+	border-radius: 20px;
+	height: 200px;
+}
 
+#_box_01, #_box_02, #_box_03
+{
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba (0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	border-radius: 10px;
+}
+	
 
 aside
 {
@@ -89,31 +104,6 @@ footer
 	width:100%;
 }
 
-#_box_01,#_box_02,#_box_03
-{
-	background-color: #ffffff;
-	height:180px;
-	border-radius: 20px;
-	float: left;
-}
-
-#_box_01
-{
-	width:33%;
-	margin-right: 1%;
-}
-
-#_box_02
-{
-	width:32%;
-	margin-right: 1%;
-}
-
-#_box_03
-{
-	width:33%;
-	margin-right: 0%;
-}
 
 @media (max-width: 600px)
 {
