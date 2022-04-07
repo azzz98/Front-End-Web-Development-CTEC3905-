@@ -1,160 +1,71 @@
 <html>
 	<head>
-		<title>Azaan's BarberShop</title>
+		<title> Azaan's BarberShop</title>
 		<link rel="stylesheet" href="mystyles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		</head>
 		<body>
-			<div class="banner">
-			<div class="navbar">
-				<img src="logo.png" class="logo">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Features</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Feedback</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Bookings</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-			<div class="content">
-				<h1>LET YOUR TRIM DO THE TALKING</h1>
-				<p>Subscribe to our YouTube Channel for self cut tutorials and more!<br> Press the bell icon to get the latest updates	
-				<div>
-					<button type="button"><span></span>Watch More</button>
-					<button type="button"><span></span>Subscribe</button>
-				</div>
-				</div>
+		<section id="banner">
+		<img src="logo.png" class="logo">
+		<div class="banner-text">
+		<h1>CutsByAzaan</h1>
+		<p>Let Your Trim Do The Talking</p>
+		<div class="banner-btn">
+		<a href="#"><span></span>Find Out</a>
+		<a href="#"><span></span>Read More</a>
 		</div>
-		
-		<!--Features-->
-		
-		
-		
-		<!--Services-->
-
-		<section id="services">
-		<div class="title-text">
-		<p>Services</p>
-		<h1> Come see first hand in what we provide!</h1>
 		</div>
-		<div class="service-box">
-			<div class="single-service">
-				<img src="media/skinfade.jpg">
-				<div class="services-desc">
-				<h3>Skin Fade</h3>
-				</div>
-				<div class="overlay">
-				</div>
-			</div>
-			<div class="single-service">
-				<img src="media/box.jpg">
-				<div class="services-desc">
-				<h3>Shape Up</h3>
-				</div>
-				<div class="overlay">
-				</div>
-			</div>
-			<div class="single-service">
-				<img src="media/beardtrim.jpg">
-				<div class="services-desc">
-				<h3>Beard Line up</h3>
-				</div>
-				<div class="overlay">
-				</div>
-			</div>
-			<div class="single-service">
-				<img src="media/hairwash.jpg">
-				<div class="services-desc">
-				<h3>Dry Shampoo</h3>
-				</div>
-				<div class="overlay">
-				</div>
-			</div>
-		
-		
-		
-		</div>
-		
 		</section>
 		
-		<!--Feedback-->
-		
-		<section id="feedback">
-			<div class="title-text">
-			<p>Feedback</p>
-			<h1>What Clients Say</h1>
-			</div>
-			<div class="feedback-row">
-				<div class="feedback-col">
-				<div class="user">
-				<img src="media/barry.jpg">
-				<div class=user-info">
-					<h4>Barry Ben</h4>
-					<small>@barryb<i class="fa fa-twitter"></i></small>
-				</div>
-				</div>
-				<p>I love how I look with my new hairstyle! First time at to their service. More than Satisfied. He also added something smoothening to my hair which had a great fragrance to it aswell. The pricing was affordable!</p>
-				</div>
-				<div class="feedback-col">
-				<img src="media/smith.jpg">
-				<div class=user-info">
-					<h4> Smith Andrews</h4>
-					<small>@smithy1<i class="fa fa-twitter"></i></small>
-				</div>
-				<p> Super easy to book online<p>
-				</div>
-				<div class="feedback-col">
-				<img src="media/jacobs.jpg">
-					<div class=user-info">
-					<h4>Jacobs Jack</h4>
-					<small>@jackyj<i class="fa fa-twitter"></i></small>
-				</div>
-				<p> Great Barbershop! Best barbershop in Birmingham hands down. I have definitely found my new go-to barbershop. Barber was polite, friendly& professional. Walked in and they took me immediately without an appoinment. Quick haircut, great service& reasonable price.</p>
-				</div>
+		<div id="sideNav">
+			<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Features</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Feedback</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Bookings</a></li>
+				<li><a href="#">Contact Us</a></li>
 			
 			
-			</div>
-		
-
-		</section>
-		
-		<!--About Us-->
-		
-		<section id="AboutUs">
-		<div class="title-text">
-		<p>About Us</p>
-		<h1></h1>
+			</ul>
+			</nav>
 		</div>
-		</section>
-		
-		<!--footer-->
-		
-		
-		<section id="footer">
-		<div class="title-text">
-		<p>Contact Us</p>
-		<h1>Visit Shop Today</h1>
-		</div>
-		<div class="footer-row">
-		<div class="footer-left">
-		<h1>Opening Hours</h1>
-		<p>Monday-Friday- 09:00-21:00</p>
-		<p>Saturday and Sunday- 11:00-23:00</p>
-		</div>
-		<div class="foot-right">
-		<h1>Get In Touch</h1>
-		<p> #30 high sreet, Digbeth Birmingham UK</P>
-		<p>azaanbarbershop@info.com</p>
-		<p>07401897542</p>
+		<div id="menuBtn">
+			<img src="media/menu.png" id="menu">
 		</div>
 		
-		</div>
+		<script>
+		var menuBtn = document.getElementById("menuBtn")
+		var sideNav = document.getElementById("sideNav")
+		var menu = document.getElementById("menu")
 		
+		sideNav.style.right = "-250px";
 		
-		
-		
-		
-		</section>
+		menuBtn.onclick = function(){
+		if(sideNav.style.right == "-250px"){
+			sideNav.style.right = "0";
+		}
+		else{
+			sideNav.style.right = "-250px";
+	}
+}
+		</script>
 		
 		</body>
-		</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
